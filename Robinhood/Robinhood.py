@@ -718,7 +718,7 @@ class Robinhood:
         #)
         res = self.session.post(
             self.endpoints['orders'],
-            params=payload
+            data=payload
         )
         res.raise_for_status()
         return res
